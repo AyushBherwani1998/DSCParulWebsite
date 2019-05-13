@@ -55,7 +55,7 @@
 	background:#1E88E5;
 	border:0;
 	font-family: 'Comfortaa';
-	font-weight: 400;
+	font-weight: bold;
 	padding-left: 20px;
 	padding-right:20px;
 	color:#ffffff;
@@ -66,25 +66,18 @@
 	color:#1E88E5;
 	font-family: 'Comfortaa';
 	background:#FFF;
-}
+  }
   
 #newsletter h1{
 	float:left;
-	font-weight: bold;
-}
-
-#newsletter .gradient-text{
-	background-clip: text;
-	color: transparent;
-	background-image: linear-gradient(to right,red,blue);
 }
   
-#newsletter form {
+#newsletter #SubscribeForm {
 	float:right;
 	margin-top:15px;
 }
   
-#newsletter #email{
+#newsletter input[type="email"]{
 	padding:18px;
 	height:25px;
 	width:250px;
@@ -115,41 +108,22 @@
 		width: 100%;
 	}
 
-	/*NEWSLETTER*/
-	#newsletter h1,
-  	#newsletter form{
-    	float:none;
-    	text-align:center;
-    	width:100%;
-	}
-
 	#newsletter button, .quote button{
 		display:block;
 		width:100%;
-	}
+	  }
 	
-	#newsletter #email, .quote input, .quote textarea{
+	  #newsletter form #email, .quote input, .quote textarea{
 		width:100%;
 		margin-bottom:5px;
-		padding:14px;
-	}
-	
-	#newsletter h1{
-		font-size: 1.5em;
-	}
+	  }
+	#newsletter h1,
+  	#newsletter form{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
 
-	.button_1{
-		height:32px;
-		background:#1E88E5;
-		border:0;
-		font-family: 'Comfortaa';
-		font-weight: 300;
-		font-size: 1em;
-		padding-left: 20px;
-		padding-right:20px;
-		color:#ffffff;
-	}
-	  
 
 	
 
