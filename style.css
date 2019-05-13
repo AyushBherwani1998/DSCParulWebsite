@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Roboto');
+.navbar, .navbar-default {
+	border-radius: 0;
+	border: none;
+	margin-bottom: 0;
+    min-height: 80px;
+}
+
+.navbar-default .navbar-brand{
+	text-align: center;
+	padding: 25px;
+
+}
+
+#logo{
+	width: 300px;
+	height: auto;
+}
+
+
+.nav li {
+    display: inline-block;
+    color: white;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+	color: #ffffff;
+	font-family: 'Roboto';
+    font-size: 1.4em;
+	font-weight: 500;
+	padding: 30px 25px 33px 25px;
+}
+
+.navbar-default .navbar-nav{
+	margin-left: 30px;
+}
+
+.poster{
+	text-align: center;
+}
+.poster img{
+	width: 60%;
+}
+
+/*Newsletter*/
+.container-newsletter{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+.button_1{
+	height:38px;
+	background:#1E88E5;
+	border:0;
+	font-family: 'Comfortaa';
+	font-weight: 400;
+	padding-left: 20px;
+	padding-right:20px;
+	color:#ffffff;
+}
+
+#newsletter{
+	padding:15px;
+	color:#1E88E5;
+	font-family: 'Comfortaa';
+	background:#FFF;
+}
+  
+#newsletter h1{
+	float:left;
+	font-weight: bold;
+}
+
+#newsletter .gradient-text{
+	background-clip: text;
+	color: transparent;
+	background-image: linear-gradient(to right,red,blue);
+}
+  
+#newsletter form {
+	float:right;
+	margin-top:15px;
+}
+  
+#newsletter #email{
+	padding:18px;
+	height:25px;
+	width:250px;
+}
+  
+
+
+@media(max-width: 768px){
+	body{
+		font-size: 16px;
+	}
+	#logo{
+		width: 210px;	
+		height: auto;
+	}
+	.navbar-default .navbar-brand{
+		padding-top: 15px;
+		text-align: center;
+	
+	}
+
+	.navbar-default .navbar-nav{
+		margin-left: 0px;
+	}
+
+	.poster img{
+		height: auto;
+		width: 100%;
+	}
+
+	/*NEWSLETTER*/
+	#newsletter h1,
+  	#newsletter form{
+    	float:none;
+    	text-align:center;
+    	width:100%;
+	}
+
+	#newsletter button, .quote button{
+		display:block;
+		width:100%;
+	}
+	
+	#newsletter #email, .quote input, .quote textarea{
+		width:100%;
+		margin-bottom:5px;
+		padding:14px;
+	}
+	
+	#newsletter h1{
+		font-size: 1.5em;
+	}
+
+	.button_1{
+		height:32px;
+		background:#1E88E5;
+		border:0;
+		font-family: 'Comfortaa';
+		font-weight: 300;
+		font-size: 1em;
+		padding-left: 20px;
+		padding-right:20px;
+		color:#ffffff;
+	}
+	  
+
+	
+
+	@media(max-width: 320px){
+		body{
+			font-size: 16px;
+		}
+		#logo{
+			width: 170px;	
+			height: auto;
+		}
+		.navbar-default .navbar-brand{
+			padding-top: 15px;
+			text-align: center;
+		
+		}
+	}
+	
+}
