@@ -1,15 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Roboto|Raleway');
 .navbar, .navbar-default {
 	border-radius: 0;
 	border: none;
 	margin-bottom: 0;
-    min-height: 80px;
+	background-color: white !important;
+	background-image: none;
+  min-height: 80px;
 }
 
 .navbar-default .navbar-brand{
 	text-align: center;
 	padding: 25px;
+	background-color:white;
+}
 
+.navbar-default .navbar-collapse{
+	background-color: white;
+}
+
+.navbar-default .navbar-toggle, .navbar-header{
+	background-color: white;
 }
 
 #logo{
@@ -27,13 +37,14 @@
 .navbar-default .navbar-nav > li > a {
 	color: #ffffff;
 	font-family: 'Roboto';
-    font-size: 1.4em;
+  font-size: 1.4em;
 	font-weight: 500;
 	padding: 30px 25px 33px 25px;
 }
 
 .navbar-default .navbar-nav{
 	margin-left: 30px;
+	background-color: white;
 }
 
 .poster{
@@ -82,8 +93,28 @@
 	height:25px;
 	width:250px;
 }
-  
+	
+.section-header div{
+	background-color: #121212;
+	color: #FFF;
+	width: 100%;
+	padding-top:10px;
+	padding-bottom:10px;
+}
 
+.section-header div h2{
+	font-size: 1.9em;
+	font-family: 'Roboto';
+	vertical-align: center;
+	text-align: center;
+}
+
+.about-us{
+	text-align: center;
+	padding: 20px;
+	font-size: 1.3em;
+	font-family: 'Raleway';
+}
 
 @media(max-width: 768px){
 	body{
@@ -99,6 +130,11 @@
 	
 	}
 
+	.navbar-default .navbar-nav > li > a {
+		font-size: 1.2em; 
+	}
+	
+
 	.navbar-default .navbar-nav{
 		margin-left: 0px;
 	}
@@ -111,22 +147,33 @@
 	#newsletter button, .quote button{
 		display:block;
 		width:100%;
-	  }
+	}
 	
-	  #newsletter form #email, .quote input, .quote textarea{
+	#newsletter form #email, .quote input, .quote textarea{
 		width:100%;
 		margin-bottom:5px;
-	  }
+	}
+
 	#newsletter h1,
-  	#newsletter form{
+  #newsletter form{
     float:none;
     text-align:center;
     width:100%;
-  }
-
+	}
 
 	
+.section-header div h3{
+	font-size: 1.7em;
+}
 
+	.about-us{
+		text-align: justify;
+		padding: 30px;
+		font-size: 1.0em;
+		font-family: 'Raleway';	
+	}
+
+	
 	@media(max-width: 320px){
 		body{
 			font-size: 16px;
