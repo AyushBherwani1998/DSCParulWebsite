@@ -103,18 +103,32 @@
 }
 
 .section-header div h2{
-	font-size: 1.9em;
+	font-size: 2.9em;
 	font-family: 'Roboto';
 	vertical-align: center;
 	text-align: center;
 }
 
-.about-us{
-	text-align: center;
-	padding: 20px;
-	font-size: 1.3em;
+.flex-container{
+	display: flex;
+	flex-wrap: row wrap;
+	align-items: center;
+  width: 100%;
+  justify-content: center;
+  background-color: white;
+}
+
+.flex-container > #about-us-para p{
+	text-align: jus;
+	padding: 50px;
+	font-size: 1.5em;
 	font-family: 'Raleway';
 }
+
+.flex-container > #about-us-gif #img-tag{
+	padding: 30px;
+	width: 600px;
+} 
 
 @media(max-width: 768px){
 	body{
@@ -131,7 +145,7 @@
 	}
 
 	.navbar-default .navbar-nav > li > a {
-		font-size: 1.2em; 
+		font-size: 1.0em; 
 	}
 	
 
@@ -162,17 +176,27 @@
 	}
 
 	
-.section-header div h3{
-	font-size: 1.7em;
-}
+	.section-header div h2{
+		font-size: 1.7em;
+	}
 
-	.about-us{
+	.flex-container > #about-us-para p{
 		text-align: justify;
 		padding: 30px;
 		font-size: 1.0em;
 		font-family: 'Raleway';	
 	}
 
+	
+	.flex-container > #about-us-gif #img-tag{
+		width:100%;
+	} 
+	.flex-container{
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		background-color: white;
+	}
 	
 	@media(max-width: 320px){
 		body{
