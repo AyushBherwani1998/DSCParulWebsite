@@ -113,13 +113,14 @@
 	display: flex;
 	flex-wrap: row wrap;
 	align-items: center;
-  width: 100%;
+	width: 100%;
+	text-align: center;
   justify-content: center;
   background-color: white;
 }
 
 .flex-container > #about-us-para p{
-	text-align: jus;
+	text-align: justify;
 	padding: 50px;
 	font-size: 1.5em;
 	font-family: 'Raleway';
@@ -129,6 +130,22 @@
 	padding: 30px;
 	width: 600px;
 } 
+
+.flex-container > #workshop-details p{
+	text-align: justify;
+	padding: 50px;
+	margin-top: 30px;
+	font-size: 1.5em;
+	font-family: 'Raleway';
+}
+
+.flex-container > #workshop-img img{
+	width: 50%;
+	margin-top: 30px;
+} 
+ 
+
+
 
 @media(max-width: 768px){
 	body{
@@ -180,6 +197,15 @@
 		font-size: 1.7em;
 	}
 
+
+	.flex-container{
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		background-color: white;
+		overflow: hidden;
+	}
+	
 	.flex-container > #about-us-para p{
 		text-align: justify;
 		padding: 30px;
@@ -187,17 +213,22 @@
 		font-family: 'Raleway';	
 	}
 
-	
 	.flex-container > #about-us-gif #img-tag{
 		width:100%;
-	} 
-	.flex-container{
-		display: flex;
-		width: 100%;
-		flex-direction: column;
-		background-color: white;
 	}
-	
+
+	.flex-container > #workshop-details p{
+		font-size: 1.0em;
+		padding: 30px;
+		margin-top: 0px;
+		font-family: 'Raleway';	
+	}
+
+	.flex-container > #workshop-img img{
+		width:100%;
+		padding: 20px;
+	}
+
 	@media(max-width: 320px){
 		body{
 			font-size: 16px;
