@@ -43,29 +43,6 @@
                 <img src="img/poster.png" alt="DSC VERTICAL LOGO">
             </div>
         </section>
-        <section id="newsletter">
-            <div class="container-newsletter">
-                <h1>Subscribe To Get Updates</h1>
-                    <form id="SubscribeForm">
-                        <input type="email" name="email" id="email" placeholder="Enter Email...">
-                        <button type="submit" id="submit" class="button_1">Subscribe</button>
-                    </form>
-                    <script>
-                        const scriptURL = ''
-                        const form = document.forms['SubscribeForm']
-                        form.addEventListener('submit', e => {
-                            e.preventDefault() 
-                              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                              .then(function (response) {
-                                console.log('Success!', response)
-                                alert("Subscribed")
-                
-                              })
-                            .catch(error => console.error('Error!', error.message))
-                        })
-                    </script>
-                </div>
-        </section>
         <section class="section-header" id="about">
             <div>
               <h2>About Us</h2>
@@ -155,6 +132,29 @@
                     </div>
                 </div>
             </div>
+        </section>
+          <section id="newsletter">
+            <div class="container-newsletter">
+                <h1>Subscribe To Get Updates</h1>
+                    <form id="SubscribeForm">
+                        <input type="email" name="email" id="email" placeholder="Enter Email...">
+                        <button type="submit" id="submit" class="button_1">Subscribe</button>
+                    </form>
+                    <script>
+                        const scriptURL = ''
+                        const form = document.forms['SubscribeForm']
+                        form.addEventListener('submit', e => {
+                            e.preventDefault() 
+                              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                              .then(function (response) {
+                                console.log('Success!', response)
+                                alert("Subscribed")
+                
+                              })
+                            .catch(error => console.error('Error!', error.message))
+                        })
+                    </script>
+                </div>
         </section>
         <footer>
             <p>Made with &#128156; DSC Parul University</p>
